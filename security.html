@@ -1,235 +1,423 @@
 <!doctype html>
 <html lang="en" data-theme="light">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Security and fraud protection — EarnKit</title>
-<meta name="description" content="Server-verified rewards, signed postbacks, device binding, rate limiting and an append-only ledger. How your balance is protected.">
-<meta name="theme-color" content="#082019">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="color-scheme" content="light dark">
-<link rel="canonical" href="https://earnkit.app/security.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="EarnKit">
-<meta property="og:title" content="Security and fraud protection — EarnKit">
-<meta property="og:description" content="Server-verified rewards, signed postbacks, device binding, rate limiting and an append-only ledger. How your balance is protected.">
-<meta property="og:image" content="https://earnkit.app/assets/img/og-cover.svg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="site.webmanifest">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
-<script>
-  // Set theme before first paint so there is no flash.
-  try { var t = localStorage.getItem('eg-theme');
-        if (!t) t = 'light';
-        document.documentElement.setAttribute('data-theme', t); } catch (e) {}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Security and fraud protection — EarnKit</title>
+  <meta name="description"
+    content="Server-verified rewards, signed postbacks, device binding, rate limiting and an append-only ledger. How your balance is protected.">
+  <meta name="theme-color" content="#082019">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://earnkit-site.vercel.app/security.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EarnKit">
+  <meta property="og:title" content="Security and fraud protection — EarnKit">
+  <meta property="og:description"
+    content="Server-verified rewards, signed postbacks, device binding, rate limiting and an append-only ledger. How your balance is protected.">
+  <meta property="og:image" content="https://earnkit-site.vercel.app/assets/img/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    // Set theme before first paint so there is no flash.
+    try {
+      var t = localStorage.getItem('eg-theme');
+      if (!t) t = 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { }
+  </script>
 
 </head>
+
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="prog" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="prog" aria-hidden="true"></div>
 
-<header class="hdr">
-  <div class="wrap hdr__in">
-    <a class="brand" href="index.html" aria-label="EarnKit home"><svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-  <rect width="40" height="40" rx="11" fill="#082019"/>
-  <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E"/>
-  <path d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
-        stroke="#082019" stroke-width="1.9" stroke-linecap="round"/>
-  <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2" stroke-linecap="round"/>
-</svg><span>EarnKit<em>Your Earning Companion</em></span></a>
-    <nav class="nav" aria-label="Primary"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="features.html">Features</a><a href="security.html" aria-current="page">Security</a><a href="faq.html">FAQ</a></nav>
-    <div class="hdr__actions">
-      <button class="tgl" type="button" aria-label="Switch theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg></button>
-      <a class="btn btn--emerald" href="download.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15"/></svg> Download APK</a>
-      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer">
-        <span></span><span></span><span></span>
-      </button>
+  <header class="hdr">
+    <div class="wrap hdr__in">
+      <a class="brand" href="index.html" aria-label="EarnKit home"><svg class="brand__mark" viewBox="0 0 40 40"
+          fill="none" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="#082019" />
+          <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E" />
+          <path
+            d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
+            stroke="#082019" stroke-width="1.9" stroke-linecap="round" />
+          <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2"
+            stroke-linecap="round" />
+        </svg><span>EarnKit<em>Your Earning Companion</em></span></a>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a
+          href="features.html">Features</a><a href="security.html" aria-current="page">Security</a><a
+          href="faq.html">FAQ</a></nav>
+      <div class="hdr__actions">
+        <button class="tgl" type="button" aria-label="Switch theme"><svg class="sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <path
+              d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6" />
+          </svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z" />
+          </svg></button>
+        <a class="btn btn--emerald" href="download.html"><svg class="ico" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15" />
+          </svg> Download APK</a>
+        <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="scrim" aria-hidden="true"></div>
-<aside class="drawer" id="drawer" aria-label="Mobile navigation">
-  <a href="index.html">Home</a>
-  <a href="how-it-works.html">How it works</a>
-  <a href="features.html">Features</a>
-  <a href="security.html" aria-current="page">Security</a>
-  <a href="faq.html">FAQ</a>
-  <a href="download.html">Download</a>
-  <a class="btn btn--emerald btn--block" href="download.html">Download APK</a>
-</aside>
+  <div class="scrim" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How it works</a>
+    <a href="features.html">Features</a>
+    <a href="security.html" aria-current="page">Security</a>
+    <a href="faq.html">FAQ</a>
+    <a href="download.html">Download</a>
+    <a class="btn btn--emerald btn--block" href="download.html">Download APK</a>
+  </aside>
 
-<main id="main">
+  <main id="main">
 
-<section class="phead">
-  <div class="wrap">
-    <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Security</p>
-    <h1 class="fade-up">Why the numbers in your wallet can be trusted</h1>
-    <p class="lede fade-up" style="animation-delay:.1s">One principle runs through the whole build: the phone in your hand is never the source of truth about money. Every rupee-relevant decision is made and recorded on our server.</p>
-  </div>
-</section>
-<section class="tight">
-  <div class="wrap">
-    <div class="grid g3">
-      <article class="card r"><div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6" rx="2"/><rect x="3.5" y="14" width="17" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></div><h3>Server-verified rewards</h3>
-        <p>Rewarded ads use server-side verification. The ad network signs a callback to our
-        endpoint and we check that signature before a single point is written. A reward request that
-        comes from the app alone is discarded.</p></article>
-      <article class="card r" data-d="1"><div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 8.5-4.1-.7-7-4.3-7-8.5V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Signed task postbacks</h3>
-        <p>Partner networks confirm completed tasks through postbacks carrying a shared secret. We
-        validate the hash and store the raw payload, so a completion can always be re-checked if a
-        partner disputes it.</p></article>
-      <article class="card r" data-d="2"><div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.5"/><path d="M8.2 10.5V8a3.8 3.8 0 017.6 0v2.5"/></svg></div><h3>Locked-down database rules</h3>
-        <p>Your account document is readable only by you, and the fields that hold balances and
-        locked bonuses cannot be written by any client at all. Only backend functions can change
-        them.</p></article>
-    </div>
-  </div>
-</section>
+    <section class="phead">
+      <div class="wrap">
+        <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Security</p>
+        <h1 class="fade-up">Why the numbers in your wallet can be trusted</h1>
+        <p class="lede fade-up" style="animation-delay:.1s">One principle runs through the whole build: the phone in
+          your hand is never the source of truth about money. Every rupee-relevant decision is made and recorded on our
+          server.</p>
+      </div>
+    </section>
+    <section class="tight">
+      <div class="wrap">
+        <div class="grid g3">
+          <article class="card r">
+            <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3.5" y="4" width="17" height="6" rx="2" />
+                <rect x="3.5" y="14" width="17" height="6" rx="2" />
+                <path d="M7 7h.01M7 17h.01" />
+              </svg></div>
+            <h3>Server-verified rewards</h3>
+            <p>Rewarded ads use server-side verification. The ad network signs a callback to our
+              endpoint and we check that signature before a single point is written. A reward request that
+              comes from the app alone is discarded.</p>
+          </article>
+          <article class="card r" data-d="1">
+            <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 8.5-4.1-.7-7-4.3-7-8.5V6l7-3z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg></div>
+            <h3>Signed task postbacks</h3>
+            <p>Partner networks confirm completed tasks through postbacks carrying a shared secret. We
+              validate the hash and store the raw payload, so a completion can always be re-checked if a
+              partner disputes it.</p>
+          </article>
+          <article class="card r" data-d="2">
+            <div class="card__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="10.5" width="14" height="9.5" rx="2.5" />
+                <path d="M8.2 10.5V8a3.8 3.8 0 017.6 0v2.5" />
+              </svg></div>
+            <h3>Locked-down database rules</h3>
+            <p>Your account document is readable only by you, and the fields that hold balances and
+              locked bonuses cannot be written by any client at all. Only backend functions can change
+              them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="band--paper2" id="fraud">
-  <div class="wrap">
-    <div class="head r">
-      <div class="rule"></div>
-      <h2>How fraud is kept out</h2>
-      <p class="lede">Reward apps die when farms of fake accounts drain the pool faster than
-      advertisers refill it. These controls exist so genuine users keep getting paid.</p>
-    </div>
-    <div class="rows r">
-      <div class="row"><div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></div><div><h3>One device, one account</h3></div>
-        <div><p>A device identifier is bound to your account at signup. A second signup from the same
-        hardware is blocked or flagged for review rather than silently allowed.</p></div></div>
-      <div class="row"><div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8"/></svg></div><div><h3>Emulator and root detection</h3></div>
-        <div><p>Most automated reward fraud runs on emulators or rooted devices. On a flagged device
-        the app still opens, but earning features are disabled.</p></div></div>
-      <div class="row"><div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><div><h3>Rate limiting</h3></div>
-        <div><p>Reward requests are throttled on the server. Humans pause naturally between ads;
-        scripts do not, and that difference is easy to see.</p></div></div>
-      <div class="row"><div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20H2"/></svg></div><div><h3>Behavioural review</h3></div>
-        <div><p>Sudden earning spikes, accounts that hit exactly the cap every single day, and
-        identical referral patterns go into a manual review queue rather than being auto-banned.</p></div></div>
-      <div class="row"><div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 8.5-4.1-.7-7-4.3-7-8.5V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3>App integrity checks</h3></div>
-        <div><p>Backend calls are attested, so requests from a repackaged or tampered build are
-        rejected before they reach any reward logic.</p></div></div>
-    </div>
-    <div class="note r" style="margin-top:30px"><b>If your account is flagged by mistake,</b> write to
-    <a class="linkline" href="mailto:support@earnkit.app">support@earnkit.app</a>. Flags put a hold on earning while we look; they are
-    not an automatic ban, and a cleared account keeps its balance.</div>
-  </div>
-</section>
+    <section class="band--paper2" id="fraud">
+      <div class="wrap">
+        <div class="head r">
+          <div class="rule"></div>
+          <h2>How fraud is kept out</h2>
+          <p class="lede">Reward apps die when farms of fake accounts drain the pool faster than
+            advertisers refill it. These controls exist so genuine users keep getting paid.</p>
+        </div>
+        <div class="rows r">
+          <div class="row">
+            <div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="6" y="2.5" width="12" height="19" rx="3" />
+                <path d="M10.5 18.5h3" />
+              </svg></div>
+            <div>
+              <h3>One device, one account</h3>
+            </div>
+            <div>
+              <p>A device identifier is bound to your account at signup. A second signup from the same
+                hardware is blocked or flagged for review rather than silently allowed.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8" />
+              </svg></div>
+            <div>
+              <h3>Emulator and root detection</h3>
+            </div>
+            <div>
+              <p>Most automated reward fraud runs on emulators or rooted devices. On a flagged device
+                the app still opens, but earning features are disabled.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M12 7.5V12l3 2" />
+              </svg></div>
+            <div>
+              <h3>Rate limiting</h3>
+            </div>
+            <div>
+              <p>Reward requests are throttled on the server. Humans pause naturally between ads;
+                scripts do not, and that difference is easy to see.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 20V9M10 20V4M16 20v-7M22 20H2" />
+              </svg></div>
+            <div>
+              <h3>Behavioural review</h3>
+            </div>
+            <div>
+              <p>Sudden earning spikes, accounts that hit exactly the cap every single day, and
+                identical referral patterns go into a manual review queue rather than being auto-banned.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row__n"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 8.5-4.1-.7-7-4.3-7-8.5V6l7-3z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg></div>
+            <div>
+              <h3>App integrity checks</h3>
+            </div>
+            <div>
+              <p>Backend calls are attested, so requests from a repackaged or tampered build are
+                rejected before they reach any reward logic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="note r" style="margin-top:30px"><b>If your account is flagged by mistake,</b> write to
+          <a class="linkline" href="mailto:codewithkutub@gmail.com">codewithkutub@gmail.com</a>. Flags put a hold on earning
+          while we look; they are
+          not an automatic ban, and a cleared account keeps its balance.
+        </div>
+      </div>
+    </section>
 
-<section>
-  <div class="wrap">
-    <div class="grid g2" style="gap:clamp(30px,5vw,64px)">
-      <div class="r">
-        <div class="head" style="margin-bottom:24px"><div class="rule"></div>
-          <h2>Money integrity</h2></div>
-        <ul class="ticks">
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h11l3.5 3.5v13H5z"/><path d="M8.5 11h8M8.5 15h5"/></svg><span>Every balance change writes an immutable ledger entry. Entries are appended, never edited or deleted.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.8 2.7L16 9.6"/></svg><span>Balances are periodically reconciled against the sum of the ledger, which surfaces any discrepancy quickly.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.5"/><path d="M8.2 10.5V8a3.8 3.8 0 017.6 0v2.5"/></svg><span>Locked and available balances are separate fields, and the split is enforced on the server at withdrawal time.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5h16M5.5 10.5v7M10 10.5v7M14 10.5v7M18.5 10.5v7M3.5 20.5h17M12 3.5l8 5H4l8-5z"/></svg><span>The withdrawal threshold is re-checked server-side even if the app shows the button as unlocked.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Conversion-rate and threshold changes are logged with the old value, the new value, who changed it and when.</span></li>
+    <section>
+      <div class="wrap">
+        <div class="grid g2" style="gap:clamp(30px,5vw,64px)">
+          <div class="r">
+            <div class="head" style="margin-bottom:24px">
+              <div class="rule"></div>
+              <h2>Money integrity</h2>
+            </div>
+            <ul class="ticks">
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 3.5h11l3.5 3.5v13H5z" />
+                  <path d="M8.5 11h8M8.5 15h5" />
+                </svg><span>Every balance change writes an immutable ledger entry. Entries are appended, never edited or
+                  deleted.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 12.3l2.8 2.7L16 9.6" />
+                </svg><span>Balances are periodically reconciled against the sum of the ledger, which surfaces any
+                  discrepancy quickly.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="5" y="10.5" width="14" height="9.5" rx="2.5" />
+                  <path d="M8.2 10.5V8a3.8 3.8 0 017.6 0v2.5" />
+                </svg><span>Locked and available balances are separate fields, and the split is enforced on the server
+                  at withdrawal time.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 10.5h16M5.5 10.5v7M10 10.5v7M14 10.5v7M18.5 10.5v7M3.5 20.5h17M12 3.5l8 5H4l8-5z" />
+                </svg><span>The withdrawal threshold is re-checked server-side even if the app shows the button as
+                  unlocked.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg><span>Conversion-rate and threshold changes are logged with the old value, the new value, who
+                  changed it and when.</span></li>
+            </ul>
+          </div>
+          <div class="r" data-d="1">
+            <div class="head" style="margin-bottom:24px">
+              <div class="rule"></div>
+              <h2>Your data</h2>
+            </div>
+            <ul class="ticks">
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg><span>We collect an email address, a device identifier used for fraud checks, and a UPI ID at
+                  payout time. That is the list.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8" />
+                </svg><span>No access to contacts, photos, SMS or call logs is requested, because none of it is
+                  needed.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 8.5-4.1-.7-7-4.3-7-8.5V6l7-3z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg><span>We do not sell personal data. Partners receive only what a task requires to confirm your
+                  completion.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 12.3l2.8 2.7L16 9.6" />
+                </svg><span>You can request deletion of your account and associated data from inside the app or by
+                  email, in line with the DPDP Act.</span></li>
+              <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 3.5h11l3.5 3.5v13H5z" />
+                  <path d="M8.5 11h8M8.5 15h5" />
+                </svg><span>Transaction records are retained where tax and audit rules require it, even after deletion
+                  of the account itself.</span></li>
+            </ul>
+            <p style="margin-top:22px"><a class="linkline" href="privacy.html">Read the full privacy policy</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band--pine tight">
+      <div class="wrap wrap--narrow">
+        <div class="head r">
+          <div class="rule"></div>
+          <h2>Protecting yourself</h2>
+          <p class="lede">Most losses in this category come from impersonation rather than from the app
+            itself. Four habits make you a hard target.</p>
+        </div>
+        <ul class="ticks r">
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15" />
+            </svg><span>Download only from this site. Verify the checksum on the download page before installing.</span>
+          </li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8" />
+            </svg><span>Nobody from EarnKit will ever ask for your UPI PIN, an OTP, or a payment to release a
+              withdrawal.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8" />
+            </svg><span>Ignore third-party groups selling &ldquo;unlimited points&rdquo; mods. They are credential
+              thieves, and using one gets your real account banned.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8 12.3l2.8 2.7L16 9.6" />
+            </svg><span>Check that support email replies come from our domain, not a lookalike.</span></li>
         </ul>
       </div>
-      <div class="r" data-d="1">
-        <div class="head" style="margin-bottom:24px"><div class="rule"></div>
-          <h2>Your data</h2></div>
-        <ul class="ticks">
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg><span>We collect an email address, a device identifier used for fraud checks, and a UPI ID at payout time. That is the list.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8"/></svg><span>No access to contacts, photos, SMS or call logs is requested, because none of it is needed.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 8.5-4.1-.7-7-4.3-7-8.5V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><span>We do not sell personal data. Partners receive only what a task requires to confirm your completion.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.8 2.7L16 9.6"/></svg><span>You can request deletion of your account and associated data from inside the app or by email, in line with the DPDP Act.</span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h11l3.5 3.5v13H5z"/><path d="M8.5 11h8M8.5 15h5"/></svg><span>Transaction records are retained where tax and audit rules require it, even after deletion of the account itself.</span></li>
-        </ul>
-        <p style="margin-top:22px"><a class="linkline" href="privacy.html">Read the full privacy policy</a></p>
+    </section>
+
+    <section class="tight">
+      <div class="wrap">
+        <div class="cta r">
+          <h2>Verified, signed, and yours to inspect</h2>
+          <p>The download page publishes the exact file size, version and SHA-256 checksum so you can confirm what you
+            are installing.</p>
+          <div class="cta__row">
+            <a class="btn btn--lg" href="download.html"><svg class="ico" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15" />
+              </svg> Go to the download page</a>
+            <a class="btn btn--lg btn--ghost" href="faq.html">Read the FAQ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__grid">
+        <div>
+          <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" fill="none"
+              aria-hidden="true">
+              <rect width="40" height="40" rx="11" fill="#082019" />
+              <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E" />
+              <path
+                d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
+                stroke="#082019" stroke-width="1.9" stroke-linecap="round" />
+              <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2"
+                stroke-linecap="round" />
+            </svg><span>EarnKit<em>Your Earning Companion</em></span></a>
+          <p class="ftr__note">An Android app for earning EarnKit Points by watching rewarded ads and completing partner
+            tasks, then withdrawing to UPI once you cross the payout threshold.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="how-it-works.html#points">EarnKit Points</a></li>
+            <li><a href="how-it-works.html#withdraw">Withdrawals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Trust</h4>
+          <ul>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="security.html#fraud">Fraud rules</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="download.html">Download &amp; install</a></li>
+            <li><a href="mailto:codewithkutub@gmail.com">codewithkutub@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ftr__bar">
+        <span>&copy; <span data-year>2026</span> EarnKit. All rights reserved.</span>
+        <span>Earnings depend on ad availability and tasks completed. EarnKit is not affiliated with Google or Google
+          Play.</span>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="band--pine tight">
-  <div class="wrap wrap--narrow">
-    <div class="head r"><div class="rule"></div>
-      <h2>Protecting yourself</h2>
-      <p class="lede">Most losses in this category come from impersonation rather than from the app
-      itself. Four habits make you a hard target.</p></div>
-    <ul class="ticks r">
-      <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15"/></svg><span>Download only from this site. Verify the checksum on the download page before installing.</span></li>
-      <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8"/></svg><span>Nobody from EarnKit will ever ask for your UPI PIN, an OTP, or a payment to release a withdrawal.</span></li>
-      <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.6 8.6l6.8 6.8M15.4 8.6l-6.8 6.8"/></svg><span>Ignore third-party groups selling &ldquo;unlimited points&rdquo; mods. They are credential thieves, and using one gets your real account banned.</span></li>
-      <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.8 2.7L16 9.6"/></svg><span>Check that support email replies come from our domain, not a lookalike.</span></li>
-    </ul>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap">
-    <div class="cta r">
-      <h2>Verified, signed, and yours to inspect</h2>
-      <p>The download page publishes the exact file size, version and SHA-256 checksum so you can confirm what you are installing.</p>
-      <div class="cta__row">
-        <a class="btn btn--lg" href="download.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15"/></svg> Go to the download page</a>
-        <a class="btn btn--lg btn--ghost" href="faq.html">Read the FAQ</a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="ftr">
-  <div class="wrap">
-    <div class="ftr__grid">
-      <div>
-        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-  <rect width="40" height="40" rx="11" fill="#082019"/>
-  <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E"/>
-  <path d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
-        stroke="#082019" stroke-width="1.9" stroke-linecap="round"/>
-  <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2" stroke-linecap="round"/>
-</svg><span>EarnKit<em>Your Earning Companion</em></span></a>
-        <p class="ftr__note">An Android app for earning EarnKit Points by watching rewarded ads and completing partner tasks, then withdrawing to UPI once you cross the payout threshold.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul>
-          <li><a href="how-it-works.html">How it works</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="how-it-works.html#points">EarnKit Points</a></li>
-          <li><a href="how-it-works.html#withdraw">Withdrawals</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Trust</h4>
-        <ul>
-          <li><a href="security.html">Security</a></li>
-          <li><a href="security.html#fraud">Fraud rules</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms of use</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <ul>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="download.html">Download &amp; install</a></li>
-          <li><a href="mailto:support@earnkit.app">support@earnkit.app</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="ftr__bar">
-      <span>&copy; <span data-year>2026</span> EarnKit. All rights reserved.</span>
-      <span>Earnings depend on ad availability and tasks completed. EarnKit is not affiliated with Google or Google Play.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/site.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
+
 </html>

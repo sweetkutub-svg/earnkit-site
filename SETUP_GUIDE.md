@@ -55,8 +55,8 @@ Get-FileHash .\downloads\earnkit-vX.Y.Z.apk -Algorithm SHA256
 
 ## Before public launch
 
-- Replace `https://earnkit.app` if your real domain is different.
-- Replace `support@earnkit.app` with your monitored support address.
+- Replace `https://earnkit-site.vercel.app` if your real domain is different.
+- Replace `codewithkutub@gmail.com` with your monitored support address.
 - Review the privacy policy and terms with qualified legal counsel.
 - Confirm every earnings, payout, fraud, age and eligibility statement matches the actual app/backend.
 - Test the site on Chrome/Edge/Firefox and Android mobile.

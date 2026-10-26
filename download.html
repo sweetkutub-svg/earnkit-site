@@ -1,226 +1,315 @@
 <!doctype html>
 <html lang="en" data-theme="light">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Download the Android APK — EarnKit</title>
-<meta name="description" content="Download the signed EarnKit APK, verify the SHA-256 checksum, and install in four steps. Requires Android 7.0+.">
-<meta name="theme-color" content="#082019">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="color-scheme" content="light dark">
-<link rel="canonical" href="https://earnkit.app/download.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="EarnKit">
-<meta property="og:title" content="Download the Android APK — EarnKit">
-<meta property="og:description" content="Download the signed EarnKit APK, verify the SHA-256 checksum, and install in four steps. Requires Android 7.0+.">
-<meta property="og:image" content="https://earnkit.app/assets/img/og-cover.svg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="site.webmanifest">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
-<script>
-  // Set theme before first paint so there is no flash.
-  try { var t = localStorage.getItem('eg-theme');
-        if (!t) t = 'light';
-        document.documentElement.setAttribute('data-theme', t); } catch (e) {}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Download the Android APK — EarnKit</title>
+  <meta name="description"
+    content="Download the signed EarnKit APK, verify the SHA-256 checksum, and install in four steps. Requires Android 7.0+.">
+  <meta name="theme-color" content="#082019">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://earnkit-site.vercel.app/download.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EarnKit">
+  <meta property="og:title" content="Download the Android APK — EarnKit">
+  <meta property="og:description"
+    content="Download the signed EarnKit APK, verify the SHA-256 checksum, and install in four steps. Requires Android 7.0+.">
+  <meta property="og:image" content="https://earnkit-site.vercel.app/assets/img/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    // Set theme before first paint so there is no flash.
+    try {
+      var t = localStorage.getItem('eg-theme');
+      if (!t) t = 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { }
+  </script>
 
 </head>
+
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="prog" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="prog" aria-hidden="true"></div>
 
-<header class="hdr">
-  <div class="wrap hdr__in">
-    <a class="brand" href="index.html" aria-label="EarnKit home"><svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-  <rect width="40" height="40" rx="11" fill="#082019"/>
-  <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E"/>
-  <path d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
-        stroke="#082019" stroke-width="1.9" stroke-linecap="round"/>
-  <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2" stroke-linecap="round"/>
-</svg><span>EarnKit<em>Your Earning Companion</em></span></a>
-    <nav class="nav" aria-label="Primary"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="features.html">Features</a><a href="security.html">Security</a><a href="faq.html">FAQ</a></nav>
-    <div class="hdr__actions">
-      <button class="tgl" type="button" aria-label="Switch theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg></button>
-      <a class="btn btn--emerald" href="download.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15"/></svg> Download APK</a>
-      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer">
-        <span></span><span></span><span></span>
-      </button>
+  <header class="hdr">
+    <div class="wrap hdr__in">
+      <a class="brand" href="index.html" aria-label="EarnKit home"><svg class="brand__mark" viewBox="0 0 40 40"
+          fill="none" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="#082019" />
+          <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E" />
+          <path
+            d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
+            stroke="#082019" stroke-width="1.9" stroke-linecap="round" />
+          <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2"
+            stroke-linecap="round" />
+        </svg><span>EarnKit<em>Your Earning Companion</em></span></a>
+      <nav class="nav" aria-label="Primary"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a
+          href="features.html">Features</a><a href="security.html">Security</a><a href="faq.html">FAQ</a></nav>
+      <div class="hdr__actions">
+        <button class="tgl" type="button" aria-label="Switch theme"><svg class="sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <path
+              d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6" />
+          </svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z" />
+          </svg></button>
+        <a class="btn btn--emerald" href="download.html"><svg class="ico" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15" />
+          </svg> Download APK</a>
+        <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="scrim" aria-hidden="true"></div>
-<aside class="drawer" id="drawer" aria-label="Mobile navigation">
-  <a href="index.html">Home</a>
-  <a href="how-it-works.html">How it works</a>
-  <a href="features.html">Features</a>
-  <a href="security.html">Security</a>
-  <a href="faq.html">FAQ</a>
-  <a href="download.html">Download</a>
-  <a class="btn btn--emerald btn--block" href="download.html">Download APK</a>
-</aside>
+  <div class="scrim" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How it works</a>
+    <a href="features.html">Features</a>
+    <a href="security.html">Security</a>
+    <a href="faq.html">FAQ</a>
+    <a href="download.html">Download</a>
+    <a class="btn btn--emerald btn--block" href="download.html">Download APK</a>
+  </aside>
 
-<main id="main">
+  <main id="main">
 
-<section class="phead">
-  <div class="wrap">
-    <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Download</p>
-    <h1 class="fade-up">Download and install EarnKit</h1>
-    <p class="lede fade-up" style="animation-delay:.1s">A signed Android package, served directly from this site. Verify the checksum, allow the install once, and you are done in about a minute.</p>
-  </div>
-</section>
-<section class="tight">
-  <div class="wrap">
-    <div class="dl">
-      <div class="dlcard r">
-        <h2 style="font-size:clamp(1.5rem,2.4vw,1.9rem);margin-bottom:10px">EarnKit for Android</h2>
-        <p class="muted">Signed release build &middot; distributed outside the Play Store</p>
+    <section class="phead">
+      <div class="wrap">
+        <p class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Download</p>
+        <h1 class="fade-up">Download and install EarnKit</h1>
+        <p class="lede fade-up" style="animation-delay:.1s">A signed Android package, served directly from this site.
+          Verify the checksum, allow the install once, and you are done in about a minute.</p>
+      </div>
+    </section>
+    <section class="tight">
+      <div class="wrap">
+        <div class="dl">
+          <div class="dlcard r">
+            <h2 style="font-size:clamp(1.5rem,2.4vw,1.9rem);margin-bottom:10px">EarnKit for Android</h2>
+            <p class="muted">Signed release build &middot; distributed outside the Play Store</p>
 
-        <dl class="dlcard__meta">
-          <div><dt>Version</dt><dd>Pre-release</dd></div>
-          <div><dt>File size</dt><dd>—</dd></div>
-          <div><dt>Requires</dt><dd>Android 7.0+</dd></div>
-          <div><dt>Released</dt><dd>Release pending</dd></div>
-        </dl>
+            <dl class="dlcard__meta">
+              <div>
+                <dt>Version</dt>
+                <dd>1.0.0</dd>
+              </div>
+              <div>
+                <dt>File size</dt>
+                <dd>—</dd>
+              </div>
+              <div>
+                <dt>Requires</dt>
+                <dd>Android 7.0+</dd>
+              </div>
+              <div>
+                <dt>Released</dt>
+                <dd>October 2026</dd>
+              </div>
+            </dl>
 
-        <a class="btn btn--lg btn--block btn--emerald" href="#release-unavailable" aria-disabled="true" data-release-unavailable data-download download>
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15"/></svg> APK release not attached
-        </a>
-        <p class="small muted" style="margin-top:12px;text-align:center" data-device-hint>
-          Android app. Open this page on your phone for the smoothest install.
-        </p>
+            <a class="btn btn--lg btn--block btn--emerald" href="https://earnkit-backend.vercel.app/earnkit.apk"
+              data-download>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15" />
+              </svg> Download APK
+            </a>
+            <p class="small muted" style="margin-top:12px;text-align:center" data-device-hint>
+              Android app. Open this page on your phone for the smoothest install.
+            </p>
 
-        <h4 style="margin:26px 0 10px">SHA-256 checksum</h4>
-        <div class="hashbox">
-          <span>SHA-256 will appear when the signed APK is published</span>
-          <button class="copy" type="button" disabled>Pending</button>
+            <h4 style="margin:26px 0 10px">SHA-256 checksum</h4>
+            <div class="hashbox">
+              <span>39F97E4C1D95F18FE95EFF1DFDC0994DAD486869201E2C645506DC865FB07917</span>
+              
+            </div>
+            <p class="small muted" style="margin-top:10px">Compare this against the file you downloaded.
+              If it does not match exactly, delete the file and download again from this page only.</p>
+          </div>
+
+          <div class="r" data-d="1">
+            <h3 style="margin-bottom:16px">Install it in four steps</h3>
+            <div class="rail">
+              <div class="step">
+                <div class="step__dot">1</div>
+                <div>
+                  <h4>Tap download</h4>
+                  <p class="small">Your browser may warn that this file type can harm your device. That
+                    warning appears for every APK. Choose <em>Download anyway</em>.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__dot">2</div>
+                <div>
+                  <h4>Open the file</h4>
+                  <p class="small">Tap it in your notification bar, or find it in Files under Downloads.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__dot">3</div>
+                <div>
+                  <h4>Allow this one install</h4>
+                  <p class="small">Android will ask permission to install apps from your browser. Enable it,
+                    press back, and tap Install. You can switch the permission off again afterwards.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__dot">4</div>
+                <div>
+                  <h4>Sign up and verify</h4>
+                  <p class="small">Create your account, verify your email, and enter a referral code if you
+                    have one. It cannot be added later.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="small muted" style="margin-top:10px">Compare this against the file you downloaded.
-        If it does not match exactly, delete the file and download again from this page only.</p>
       </div>
+    </section>
 
-      <div class="r" data-d="1">
-        <h3 style="margin-bottom:16px">Install it in four steps</h3>
-        <div class="rail">
-          <div class="step"><div class="step__dot">1</div><div><h4>Tap download</h4>
-            <p class="small">Your browser may warn that this file type can harm your device. That
-            warning appears for every APK. Choose <em>Download anyway</em>.</p></div></div>
-          <div class="step"><div class="step__dot">2</div><div><h4>Open the file</h4>
-            <p class="small">Tap it in your notification bar, or find it in Files under Downloads.</p></div></div>
-          <div class="step"><div class="step__dot">3</div><div><h4>Allow this one install</h4>
-            <p class="small">Android will ask permission to install apps from your browser. Enable it,
-            press back, and tap Install. You can switch the permission off again afterwards.</p></div></div>
-          <div class="step"><div class="step__dot">4</div><div><h4>Sign up and verify</h4>
-            <p class="small">Create your account, verify your email, and enter a referral code if you
-            have one. It cannot be added later.</p></div></div>
+    <section class="band--paper2">
+      <div class="wrap">
+        <div class="head r">
+          <div class="rule"></div>
+          <h2>If something goes wrong</h2>
+          <p class="lede">The three problems almost everyone hits, and the fix for each.</p>
+        </div>
+        <div class="acc r">
+          <details open>
+            <summary>Play Protect says the app is not recognised</summary>
+            <div class="acc__body">
+              <p>Play Protect flags every app installed from outside the Play
+                Store, including ones that are perfectly fine. Choose <em>Install anyway</em>. If you want
+                certainty first, verify the SHA-256 checksum above against your downloaded file &mdash; a
+                match means the file is byte-for-byte what we published.</p>
+            </div>
+          </details>
+          <details>
+            <summary>The install button is greyed out</summary>
+            <div class="acc__body">
+              <p>Your Android version needs permission for the specific app doing
+                the install. Go to Settings, then Apps, then find your browser or file manager, then
+                <em>Install unknown apps</em>, and allow it. Return to the file and try again.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>&ldquo;App not installed&rdquo; appears at the end</summary>
+            <div class="acc__body">
+              <p>Usually one of three things: an older copy of the app is already
+                installed and needs to be removed first, the download was interrupted and the file is
+                incomplete, or storage is full. Uninstall the old version, clear some space, and download
+                the file again.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do updates work without the Play Store?</summary>
+            <div class="acc__body">
+              <p>The app checks for a newer version on launch and tells you when one
+                is available. You return to this page, download the latest APK and install it over the
+                existing app. Your account, balance and history are untouched by an update.</p>
+            </div>
+          </details>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="band--paper2">
-  <div class="wrap">
-    <div class="head r"><div class="rule"></div>
-      <h2>If something goes wrong</h2>
-      <p class="lede">The three problems almost everyone hits, and the fix for each.</p></div>
-    <div class="acc r">
-      <details open><summary>Play Protect says the app is not recognised</summary>
-        <div class="acc__body"><p>Play Protect flags every app installed from outside the Play
-        Store, including ones that are perfectly fine. Choose <em>Install anyway</em>. If you want
-        certainty first, verify the SHA-256 checksum above against your downloaded file &mdash; a
-        match means the file is byte-for-byte what we published.</p></div></details>
-      <details><summary>The install button is greyed out</summary>
-        <div class="acc__body"><p>Your Android version needs permission for the specific app doing
-        the install. Go to Settings, then Apps, then find your browser or file manager, then
-        <em>Install unknown apps</em>, and allow it. Return to the file and try again.</p></div></details>
-      <details><summary>&ldquo;App not installed&rdquo; appears at the end</summary>
-        <div class="acc__body"><p>Usually one of three things: an older copy of the app is already
-        installed and needs to be removed first, the download was interrupted and the file is
-        incomplete, or storage is full. Uninstall the old version, clear some space, and download
-        the file again.</p></div></details>
-      <details><summary>How do updates work without the Play Store?</summary>
-        <div class="acc__body"><p>The app checks for a newer version on launch and tells you when one
-        is available. You return to this page, download the latest APK and install it over the
-        existing app. Your account, balance and history are untouched by an update.</p></div></details>
-    </div>
-  </div>
-</section>
+    <section class="tight">
+      <div class="wrap wrap--narrow">
+        <div class="note r"><b>One warning worth repeating.</b> This page and Xiaomi GetApps are the only places we publish
+          the app. Any APK for EarnKit found on a file-sharing site, a messaging group or a mirror download
+          site is modified, and a modified build of a money app is modified for exactly one reason.</div>
+      </div>
+    </section>
 
-<section class="tight">
-  <div class="wrap wrap--narrow">
-    <div class="note r"><b>One warning worth repeating.</b> This page is the only place we publish
-    the app. Any APK for EarnKit found on a file-sharing site, a messaging group or a mirror download
-    site is modified, and a modified build of a money app is modified for exactly one reason.</div>
-  </div>
-</section>
+    <section class="tight">
+      <div class="wrap">
+        <div class="cta r">
+          <h2>Questions before you install?</h2>
+          <p>The FAQ covers earnings, payouts, account limits and what happens to your data.</p>
+          <div class="cta__row">
+            <a class="btn btn--lg" href="faq.html"><svg class="ico" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15" />
+              </svg> Read the FAQ</a>
+            <a class="btn btn--lg btn--ghost" href="security.html">Review the security rules</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="tight">
-  <div class="wrap">
-    <div class="cta r">
-      <h2>Questions before you install?</h2>
-      <p>The FAQ covers earnings, payouts, account limits and what happens to your data.</p>
-      <div class="cta__row">
-        <a class="btn btn--lg" href="faq.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11M7.5 10.5L12 15l4.5-4.5M4.5 19.5h15"/></svg> Read the FAQ</a>
-        <a class="btn btn--lg btn--ghost" href="security.html">Review the security rules</a>
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__grid">
+        <div>
+          <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" fill="none"
+              aria-hidden="true">
+              <rect width="40" height="40" rx="11" fill="#082019" />
+              <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E" />
+              <path
+                d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
+                stroke="#082019" stroke-width="1.9" stroke-linecap="round" />
+              <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2"
+                stroke-linecap="round" />
+            </svg><span>EarnKit<em>Your Earning Companion</em></span></a>
+          <p class="ftr__note">An Android app for earning EarnKit Points by watching rewarded ads and completing partner
+            tasks, then withdrawing to UPI once you cross the payout threshold.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="how-it-works.html#points">EarnKit Points</a></li>
+            <li><a href="how-it-works.html#withdraw">Withdrawals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Trust</h4>
+          <ul>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="security.html#fraud">Fraud rules</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="download.html">Download &amp; install</a></li>
+            <li><a href="mailto:codewithkutub@gmail.com">codewithkutub@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ftr__bar">
+        <span>&copy; <span data-year>2026</span> EarnKit. All rights reserved.</span>
+        <span>Earnings depend on ad availability and tasks completed. EarnKit is not affiliated with Google or Google
+          Play.</span>
       </div>
     </div>
-  </div>
-</section>
-</main>
+  </footer>
 
-<footer class="ftr">
-  <div class="wrap">
-    <div class="ftr__grid">
-      <div>
-        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-  <rect width="40" height="40" rx="11" fill="#082019"/>
-  <circle class="coin" cx="20" cy="20" r="10.5" fill="#E9BE4E"/>
-  <path d="M20 13.5v13M23.6 16.1c-.9-1-2.2-1.5-3.6-1.5-2.1 0-3.7 1.1-3.7 2.6 0 3.6 7.3 1.9 7.3 5.5 0 1.5-1.6 2.6-3.7 2.6-1.4 0-2.7-.5-3.6-1.5"
-        stroke="#082019" stroke-width="1.9" stroke-linecap="round"/>
-  <path d="M8.5 29.5c4 2.6 8 3.9 12 3.9s7.4-1.3 11-3.9" stroke="#17A87C" stroke-width="2.2" stroke-linecap="round"/>
-</svg><span>EarnKit<em>Your Earning Companion</em></span></a>
-        <p class="ftr__note">An Android app for earning EarnKit Points by watching rewarded ads and completing partner tasks, then withdrawing to UPI once you cross the payout threshold.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul>
-          <li><a href="how-it-works.html">How it works</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="how-it-works.html#points">EarnKit Points</a></li>
-          <li><a href="how-it-works.html#withdraw">Withdrawals</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Trust</h4>
-        <ul>
-          <li><a href="security.html">Security</a></li>
-          <li><a href="security.html#fraud">Fraud rules</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms of use</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <ul>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="download.html">Download &amp; install</a></li>
-          <li><a href="mailto:support@earnkit.app">support@earnkit.app</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="ftr__bar">
-      <span>&copy; <span data-year>2026</span> EarnKit. All rights reserved.</span>
-      <span>Earnings depend on ad availability and tasks completed. EarnKit is not affiliated with Google or Google Play.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/site.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
+
 </html>

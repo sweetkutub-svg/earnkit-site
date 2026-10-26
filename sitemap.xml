@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://earnkit.app/index.html</loc></url>
-  <url><loc>https://earnkit.app/how-it-works.html</loc></url>
-  <url><loc>https://earnkit.app/features.html</loc></url>
-  <url><loc>https://earnkit.app/security.html</loc></url>
-  <url><loc>https://earnkit.app/faq.html</loc></url>
-  <url><loc>https://earnkit.app/download.html</loc></url>
-  <url><loc>https://earnkit.app/privacy.html</loc></url>
-  <url><loc>https://earnkit.app/terms.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/index.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/how-it-works.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/features.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/security.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/faq.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/download.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/privacy.html</loc></url>
+  <url><loc>https://earnkit-site.vercel.app/terms.html</loc></url>
 </urlset>
